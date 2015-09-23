@@ -134,28 +134,29 @@
   System.out.println("You picked the "+suitName4+" of "+cardIdentity4+".");
   
 //To test if there are one pair, two pairs and a three kind 
-  if(suitName==suitName1)
+  if(suitName.equals(suitName1))
   {System.out.println("You have a pair!");}
-  else if(suitName==suitName1)
+  else if(suitName.equals(suitName1))
   {System.out.println("You have a pair!");}
-  else if(suitName==suitName2)
+  else if(suitName.equals(suitName2))
   {System.out.println("You have a pair!");}
-  else if(suitName==suitName4)
+  else if(suitName.equals(suitName4))
   {System.out.println("You have a pair!");}
-  else if(suitName1==suitName2)
+  else if(suitName1.equals(suitName2))
   {System.out.println("You have a pair!");}
-  else if(suitName1==suitName3)
+  else if(suitName1.equals(suitName3))
   {System.out.println("You have a pair!");}
-  else if(suitName1==suitName4)
+  else if(suitName1.equals(suitName4))
   {System.out.println("You have a pair!");}
-  else if(suitName2==suitName3)
+  else if(suitName2.equals(suitName3))
   {System.out.println("You have a pair!");}
-  else if(suitName2==suitName4)
+  else if(suitName2.equals(suitName4))
   {System.out.println("You have a pair!");}
-  else if(suitName3==suitName4)
+  else if(suitName3.equals(suitName4))
   {System.out.println("You have a pair!");}
   else if(suitName!=suitName1)
   {System.out.println("You have a high card!");}
+  
   
  } //End of the program 
        
