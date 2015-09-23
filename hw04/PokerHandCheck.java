@@ -162,8 +162,22 @@
   {System.out.println("You have a high card!");}
   else if(suitName1.equals(suitName)||suitName.equals(suitName2))
   {System.out.println("You have a three of a kind!");}
-  
-  
+  else if(suitName.equals(suitName1)||suitName1.equals(suitName3))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName.equals(suitName1)||suitName1.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName1.equals(suitName2)||suitName2.equals(suitName3))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName1.equals(suitName2)||suitName2.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName2.equals(suitName3)||suitName3.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName.equals(suitName3)||suitName3.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName.equals(suitName2)||suitName2.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
+  else if(suitName1.equals(suitName3)||suitName3.equals(suitName4))
+  {System.out.println("You have a three of a kind!");}
   
  } //End of the program 
        
