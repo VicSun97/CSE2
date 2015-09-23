@@ -65,6 +65,7 @@
   if(1<=Num1&&Num1<=13){cardIdentity1="Diamonds";}
   else if(14<=Num1&&Num1<=26){cardIdentity1="Clubs";}
   else if(27<=Num1&&Num1<=39){cardIdentity1="Hearts";}
+  else if(40<=Num1&&Num1<=52){cardIdentity1="Spades";}
   System.out.println("You picked the "+suitName1+" of "+cardIdentity1+".");
   
   
@@ -86,6 +87,7 @@
   if(1<=Num2&&Num2<=13){cardIdentity2="Diamonds";}
   else if(14<=Num2&&Num2<=26){cardIdentity2="Clubs";}
   else if(27<=Num2&&Num2<=39){cardIdentity2="Hearts";}
+  else if(40<=Num2&&Num2<=52){cardIdentity2="Spades";}
   System.out.println("You picked the "+suitName2+" of "+cardIdentity2+".");
   
   
@@ -107,6 +109,7 @@
   if(1<=Num3&&Num3<=13){cardIdentity3="Diamonds";}
   else if(14<=Num3&&Num3<=26){cardIdentity3="Clubs";}
   else if(27<=Num3&&Num3<=39){cardIdentity3="Hearts";}
+  else if(40<=Num3&&Num3<=52){cardIdentity3="Spades";}
   System.out.println("You picked the "+suitName3+" of "+cardIdentity3+".");
   
  //Create another Number storage value
@@ -117,16 +120,17 @@
   else if(Num4==11||Num4==24||Num4==37||Num4==50){suitName4="Jack";}
   else if(Num4==12||Num4==25||Num4==38||Num4==51){suitName4="Queen";}
   else if(Num4==13||Num4==26||Num4==39||Num4==52){suitName4="King";}
-  else if(2<=Num4&&Num4<=10){suitName=Num4+"";}//convert int to string use i+""
-  else if(15<=Num4&&Num4<=23){suitName=Num4%13+"";}
-  else if(28<=Num4&&Num4<=36){suitName=Num4%13+"";}
-  else if(41<=Num4&&Num4<=49){suitName=Num4%13+"";}
+  else if(2<=Num4&&Num4<=10){suitName4=Num4+"";}//convert int to string use i+""
+  else if(15<=Num4&&Num4<=23){suitName4=Num4%13+"";}
+  else if(28<=Num4&&Num4<=36){suitName4=Num4%13+"";}
+  else if(41<=Num4&&Num4<=49){suitName4=Num4%13+"";}
  
 
 // Use if statements again to assign the card identity 
   if(1<=Num4&&Num4<=13){cardIdentity4="Diamonds";}
   else if(14<=Num4&&Num4<=26){cardIdentity4="Clubs";}
   else if(27<=Num4&&Num4<=39){cardIdentity4="Hearts";}
+  else if(40<=Num4&&Num4<=52){cardIdentity4="Spades";}
   System.out.println("You picked the "+suitName4+" of "+cardIdentity4+".");
   
 //To test if there are one pair, two pairs and a three kind 
