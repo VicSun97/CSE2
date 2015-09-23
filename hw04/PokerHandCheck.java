@@ -150,7 +150,8 @@
   {System.out.println("You have a pair!");}
   else if(suitName3==suitName4)
   {System.out.println("You have a pair!");}
- 
+  else if(suitName!=suitName1)
+  {System.out.println("You have a high card!");}
   
  } //End of the program 
        
