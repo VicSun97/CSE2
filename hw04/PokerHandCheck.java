@@ -178,6 +178,8 @@
   {System.out.println("You have a three of a kind!");}
   else if(suitName1.equals(suitName3)||suitName3.equals(suitName4))
   {System.out.println("You have a three of a kind!");}
+  else if(suitName.equals(suitName1)||suitName3.equals(suitName4))
+  {System.out.println("You have two pairs");}
   
  } //End of the program 
        
