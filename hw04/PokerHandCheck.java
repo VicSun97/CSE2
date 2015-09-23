@@ -155,11 +155,11 @@
   else if(suitName3.equals(suitName4))
   {System.out.println("You have a pair!");}
   else if(suitName!=suitName1||suitName!=suitName2||suitName!=suitName3||suitName!=suitName4)
-  {System.out.println("You have a high card!");}
+  {System.out.println("You have a high card hand!");}
   else if(suitName1!=suitName2||suitName1!=suitName3||suitName1!=suitName4)
-  {System.out.println("You have a high card!");}
+  {System.out.println("You have a high card hand!");}
   else if(suitName2!=suitName3||suitName2!=suitName4||suitName3!=suitName4)
-  {System.out.println("You have a high card!");}
+  {System.out.println("You have a high card hand!");}
   else if(suitName1.equals(suitName)&&suitName.equals(suitName2))
   {System.out.println("You have a three of a kind!");}
   else if(suitName.equals(suitName1)&&suitName1.equals(suitName3))
