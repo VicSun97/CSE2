@@ -93,13 +93,15 @@ while(it7){sun=myScanner.nextDouble();
   double mean=(mon+tue+wed+thu+fri+sat+sun)/7;
   System.out.println("Your average weekly expenses are:  $"+Math.round(mean*100)/100.00);
 // use a random generator to pick up a fluctuation percentage of estimated expenses for next weeks 
-  double ranNum=(double)(Math.random()*41)-20;// random number between -20 and 20
+ // random number between -20 and 20
   double sumExpenses=mean;
-  System.out.println(ranNum);
-  for(int counter7=1;counter7<=52;counter7++){
-    double interest=(sumExpenses*ranNum/100.00);
-    sumExpenses+=interest;
+  double interest=0;
+  for(int counter7=1;counter7<=208;counter7++){
+    double ranNum=(double)(Math.random()*41)-20;
+    interest=(sumExpenses*ranNum/100.00);
+    interest+=interest;
   }
+  sumExpenses=sumExpenses*208+interest;
   System.out.println("Estimated expenditure for 4 years: $"+Math.round(sumExpenses*100)/100.00);
   
    }// end of the program 
