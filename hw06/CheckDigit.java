@@ -34,7 +34,9 @@
       multiple++;
       bar=bar/10;
     }// calculate for the sum
-      if(sum%11==bar2%10){
+      String X="10";
+      int x=Integer.parseInt(X);
+      if(sum%11==bar2%10||sum%11==bar2%x){
           System.out.println("This is a valid ISBN.");
       }
       else{System.out.println("This is NOT a valid ISBN.Check digit should be X.");}
