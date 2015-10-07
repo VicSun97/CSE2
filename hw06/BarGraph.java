@@ -14,8 +14,13 @@
       public static void main(String[] args){
 //create scanner constructor
  Scanner myScanner=new Scanner(System.in);
+ boolean it=true;
+ double mon=0;
  System.out.print("Expenses for Monday:    $");// prompt the input 
- double mon=myScanner.nextDouble();
+while(it){mon=myScanner.nextDouble();
+  if(mon<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it=false;}}
  System.out.print("Expenses for Tuesday:   $");// prompt the input 
  double tue=myScanner.nextDouble();
  System.out.print("Expenses for Wednesday: $");// prompt the input 
@@ -61,16 +66,16 @@
   System.out.print("\n");
 // calculate the average daily expense 
   double mean=(mon+tue+wed+thu+fri+sat+sun)/7;
-  System.out.println("Your average daily expenses are:  $"+Math.round(mean*100)/100.00);
+  System.out.println("Your average weekly expenses are:  $"+Math.round(mean*100)/100.00);
 // use a random generator to pick up a fluctuation percentage of estimated expenses for next weeks 
   double ranNum=(double)(Math.random()*41)-20;// random number between -20 and 20
-  double sumExpenses=0;
+  double sumExpenses=mean;
+  System.out.println(ranNum);
   for(int counter7=1;counter7<=52;counter7++){
-    sumExpenses+=mean;
     double interest=(sumExpenses*ranNum/100.00);
     sumExpenses+=interest;
   }
-  System.out.println("Estimated expenditure for 4 years: $"+Math.round(sumExpenses*100)/100);
+  System.out.println("Estimated expenditure for 4 years: $"+Math.round(sumExpenses*100)/100.00);
   
    }// end of the program 
       
