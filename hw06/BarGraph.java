@@ -14,25 +14,50 @@
       public static void main(String[] args){
 //create scanner constructor
  Scanner myScanner=new Scanner(System.in);
- boolean it=true;
- double mon=0;
+ boolean it=true,it2=true,it3=true,it4=true,it5=true,it6=true,it7=true;
+ double mon=0,tue=0,wed=0,thu=0,fri=0,sat=0,sun=0;
  System.out.print("Expenses for Monday:    $");// prompt the input 
 while(it){mon=myScanner.nextDouble();
   if(mon<0){
    System.out.print("Please only enter positive numbers. Try again:  $");}
   else{it=false;}}
+ 
  System.out.print("Expenses for Tuesday:   $");// prompt the input 
- double tue=myScanner.nextDouble();
+while(it2){tue=myScanner.nextDouble();
+  if(tue<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it2=false;}}
+
  System.out.print("Expenses for Wednesday: $");// prompt the input 
- double wed=myScanner.nextDouble();
+while(it3){wed=myScanner.nextDouble();
+  if(wed<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it3=false;}}
+
  System.out.print("Expenses for Thursday:  $");// prompt the input 
- double thu=myScanner.nextDouble();
+while(it4){thu=myScanner.nextDouble();
+  if(thu<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it4=false;}}
+
  System.out.print("Expenses for Friday:    $");// prompt the input 
- double fri=myScanner.nextDouble();
+while(it5){fri=myScanner.nextDouble();
+  if(fri<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it5=false;}}
+
  System.out.print("Expenses for Saturday:  $");// prompt the input
- double sat=myScanner.nextDouble();
+while(it6){sat=myScanner.nextDouble();
+  if(sat<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it6=false;}} 
+
  System.out.print("Expenses for Sunday:    $");// prompt the input
- double sun=myScanner.nextDouble();
+while(it7){sun=myScanner.nextDouble();
+  if(sun<0){
+   System.out.print("Please only enter positive numbers. Try again:  $");}
+  else{it7=false;}}
+
  System.out.println();
 
   System.out.print("Mon:    ");
