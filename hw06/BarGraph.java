@@ -63,7 +63,7 @@ while(it7){sun=myScanner.nextDouble();
   System.out.print("Mon:    ");
   for(int counter=1;counter<=Math.round(mon);counter++){
   System.out.print("*");} // use Math.round Method to round the double int
-  System.out.print("\n");
+  System.out.print("\n");// have a line blank or separated
   System.out.print("Tues:   ");
  for(int counter1=1;counter1<=Math.round(tue);counter1++){
   System.out.print("*");}
@@ -100,8 +100,8 @@ while(it7){sun=myScanner.nextDouble();
     double ranNum=(double)(Math.random()*41)-20;
     interest=(sumExpenses*ranNum/100.00);
     interest+=interest;
-  }
-  sumExpenses=sumExpenses*208+interest;
+  }// loop different random number percent each time by using random Generator
+  sumExpenses=sumExpenses*208+interest;// total=weekly expenditure*52*4+total Interest
   System.out.println("Estimated expenditure for 4 years: $"+Math.round(sumExpenses*100)/100.00);
   
    }// end of the program 
