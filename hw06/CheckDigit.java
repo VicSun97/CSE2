@@ -39,7 +39,7 @@
       if(sum%11==bar2%10||sum%11==bar2%x){
           System.out.println("This is a valid ISBN.");
       }
-      else{System.out.println("This is NOT a valid ISBN.Check digit should be X.");}
+      else{System.out.println("This is NOT a valid ISBN.Check digit should be "+sum%11+".");}
       
   }//end of the program 
  }
