@@ -16,12 +16,12 @@
     String barcode="";
     while(it){barcode=myScanner.nextLine();
    int digits=String.valueOf(barcode).length();
-   int bar=Integer.parseInt(barcode);
+   int bar=Integer.parseInt(barcode); 
     if(digits<10){
         System.out.print("This is NOT a valid ISBN. Please enter 10 digits: ");
     }
     else{it=false;}}
-    int bar=Integer.parseInt(barcode);
+    int bar=Integer.parseInt(barcode);// cast string to int
     int multiple=2;
     int bar2=bar;
     int sum=0;
@@ -33,7 +33,7 @@
       sum+=increase;
       multiple++;
       bar=bar/10;
-    }
+    }// calculate for the sum
       if(sum%11==bar2%10){
           System.out.println("This is a valid ISBN.");
       }
