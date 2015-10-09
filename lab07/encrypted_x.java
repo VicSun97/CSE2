@@ -22,6 +22,7 @@
           System.out.println(" ERROR: need an integer between 0-100.");
           System.out.print("Please input your integer again: ");
           myScanner.hasNextInt(); }}}
+   
     for(int i=0;i<input;i++){
      if(i==0||i==input-1){System.out.print(" ");}
      else{System.out.print("*");}
