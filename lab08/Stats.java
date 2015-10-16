@@ -77,6 +77,6 @@
     double finalMean=mean(input1,input2,input3,input4,input5);
     double finalMedian=median(input1,input2,input3,input4,input5);
     results(finalMean,finalMedian);
-    }
+    }// end of the program
  }
        
