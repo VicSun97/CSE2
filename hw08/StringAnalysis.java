@@ -19,7 +19,8 @@
       public static boolean analysis(String strin,int num){
           if(strin.length()>=num){
             for(int i=0;i<num;i++){
-            if(!(strin.charAt(i)>='a'&&strin.charAt(i)<='z')){
+           // test both capital letters and small letters
+            if(!(strin.charAt(i)>='a'&&strin.charAt(i)<='z')||!(strin.charAt(i)>='A'&&strin.charAt(i)<='Z')){
                 return false;}}}
           else if(strin.length()>num){
              for(int i=0;i<strin.length();i++){
