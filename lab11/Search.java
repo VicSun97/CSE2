@@ -43,7 +43,7 @@
              array2[i]=array2[j];
              array2[j]=temp3;
             }}} 
-         /*  for(int i=0;i<array2.length;i++){
+       /* for(int i=0;i<array2.length;i++){
          System.out.println(i+":"+array2[i]);}*/
         int a=array2[0];
      System.out.println("The maximum of array2 is:"+temp3); // directly print out the max and min of array2
