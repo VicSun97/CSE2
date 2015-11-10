@@ -63,7 +63,7 @@ import java.util.Random;
       
       public static void main(String[] args){  // Begining of the main method 
   Scanner myScanner=new Scanner(System.in); // create a Scanner constructor
-  System.out.print("Enter 15 ints for final grades in CSE2: "); 
+  System.out.println("Enter 15 ints for final grades in CSE2: "); 
   int[] grade=new int[15]; // create a int array to represent students' grades
  for(int i=0;i<grade.length;i++){ 
      grade[i]=input(0); //call input method to test for the valid of input
