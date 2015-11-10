@@ -34,9 +34,9 @@
   System.out.println("The mimimum of array1 is:"+temp2);
       
       int temp3=0;
-      for(int i=0;i<array2.length;i++){  // rearrange the array2 to list from smallest to largest
+      for(int i=0;i<array2.length;i++){  
           array2[i]=(int)(Math.random()*100001);}
-      for(int i=0;i<array2.length;i++){
+      for(int i=0;i<array2.length;i++){ //rearrange the array2 to list from smallest to largest
           for(int j=i+1;j<array2.length;j++){
             if(array2[i]>=array2[j]){
              temp3=array2[i];
