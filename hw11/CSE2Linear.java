@@ -34,7 +34,7 @@ import java.util.Random;
               System.out.print(array[i]+" ");
           }} 
      
-     public static void sortedArray(int[] array){
+     /*public static void sortedArray(int[] array){
          for(int i=0;i<array.length;i++){ //rearrange the array to list from smallest to largest
           for(int j=i+1;j<array.length;j++){
             if(array[i]>=array[j]){
@@ -42,13 +42,13 @@ import java.util.Random;
              array[i]=array[j];
              array[j]=temp;
             }}} 
-         }
+         }*/
      public static void linearSearch(int[] array,int key){ // To check if the key is found or not found and say how many iterations are used
          for(int i=0;i<array.length;i++){
              if(array[i]==key){
-                 System.out.println(key+" was found in the list with "+(i+1)+" iterations");break;}
+                 System.out.println(key+" was found in the list with "+(i+1)+" iterations.");break;}
              else if(i==array.length-1&&array[i]!=key){
-                 System.out.println(key+" was not found in the list with "+(i+1)+" iterations"); }
+                 System.out.println(key+" was not found in the list with "+(i+1)+" iterations."); }
               }
          }
       public static void scrambledArray(int[] array){  // create a method that scrambled the array
@@ -61,6 +61,23 @@ import java.util.Random;
               array[num]=temp; }
       }
       
+      public static void binarySearch(int[] array,int key){ // create a method for binary search
+       int low=0;
+       int high=array.length-1;
+       int mid=0;
+       for(int i=0;i<array.length;i++){
+         if(high>=low){
+          mid=(high+low)/2;
+          if(key<array[mid]){
+           high=mid-1;}
+          else if(key==array[mid]){
+           System.out.println(key+" was found in the list with "+(i+1)+" iterations.");break;}
+          else{low=mid+1;} }
+         else if(high<low){
+          System.out.println(key+" was not found in the list with "+(i+1)+" iterations.");break;}
+          }
+      }
+      
       public static void main(String[] args){  // Begining of the main method 
   Scanner myScanner=new Scanner(System.in); // create a Scanner constructor
   System.out.println("Enter 15 ints for final grades in CSE2: "); 
@@ -68,21 +85,17 @@ import java.util.Random;
  for(int i=0;i<grade.length;i++){ 
      grade[i]=input(0); //call input method to test for the valid of input
      if(i==0){continue;}
-     else if(grade[i]==grade[i-1]){
-        System.out.println("ERROR: Please input a inequal number to the last one."); 
-        // if the input is equal to last one,then call the input method again
+     else if(grade[i]<grade[i-1]){
+        System.out.println("ERROR: Please input a greater number than the last one."); 
+        // if the input is less to last one,then call the input method again
         grade[i]=input(0);}
      }
   System.out.print("Here are the array that you input: ");
   printArray(grade); // call the printArray method
-  sortedArray(grade); // call the sortedArray method to rearrange array in order
-  System.out.print("\n");
-  System.out.println("Sorted: ");
-  printArray(grade);// call the printArray method
   System.out.print("\n");
   System.out.print("Enter a grade to search for: ");// prompt the user for inputting a search key
   int key=myScanner.nextInt();
-  linearSearch(grade,key); // call the linearSearch method
+  binarySearch(grade,key); // call the binarySearch method
   System.out.println("Scrambled: ");
   scrambledArray(grade);// call the scrambled method
   printArray(grade);// call the printArray method
